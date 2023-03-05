@@ -3,6 +3,13 @@
 * {
   box-sizing: border-box;
   font-family: "Quicksand", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 body {
   padding: 0;
@@ -14,5 +21,4 @@ body {
   min-height: 100vh;
   background-color: black;
   color: white;
-  margin-top: 10px;
 }
