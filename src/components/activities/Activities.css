@@ -1,0 +1,17 @@
+.search-field {
+  color: "gold";
+  background-color: rgb(53, 50, 50);
+  border-radius: 10px;
+  width: 300px;
+}
+
+.search-field-container {
+  display: inline;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.type-label {
+  color: gold;
+  outline-color: gold;
+}
