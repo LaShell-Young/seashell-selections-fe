@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/autumn-selections-fe/static/css/main.73cf6576.css",
+    "main.js": "/autumn-selections-fe/static/js/main.831f5739.js",
+    "index.html": "/autumn-selections-fe/index.html",
+    "main.73cf6576.css.map": "/autumn-selections-fe/static/css/main.73cf6576.css.map",
+    "main.831f5739.js.map": "/autumn-selections-fe/static/js/main.831f5739.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.73cf6576.css",
+    "static/js/main.831f5739.js"
+  ]
+}
