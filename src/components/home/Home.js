@@ -4,8 +4,8 @@ import Hero from '../hero/Hero'
 
 
 const Home = ({ entertainment }) => {
-    // console.log("entertainment in home")
-    // console.log(entertainment)
+    console.log("entertainment in home")
+    console.log(entertainment)
     return (
         <div>
             {entertainment &&
