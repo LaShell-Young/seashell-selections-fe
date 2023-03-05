@@ -73,7 +73,7 @@ export const activities = [
   },
   {
     "name": "Karaoke bar",
-    "type": "nightLife",
+    "type": "nightlife",
     "status": "pending",
     "rating": 0
   },

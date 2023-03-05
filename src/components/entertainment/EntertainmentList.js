@@ -18,8 +18,8 @@ const options = ['Title', 'Type', 'Genre', 'Rating'];
 //     'Animation', 'Period piece', 'Spanish', 'Horror'];
 
 const EntertainmentList = ({ entertainment }) => {
-    console.log("entertainment in EntertainmentList")
-    console.log(entertainment)
+    // console.log("entertainment in EntertainmentList")
+    // console.log(entertainment)
     const [selectedItems, setSelectedItems] = useState();
     const [open, setOpen] = useState(false);
     const anchorRef = React.useRef(null);
@@ -155,8 +155,8 @@ const EntertainmentList = ({ entertainment }) => {
         setSelectedItems(entertainment);
     }, [])
 
-    console.log("selectedItems")
-    console.log(selectedItems)
+    // console.log("selectedItems")
+    // console.log(selectedItems)
     return (
         <>
             <div style={{ margin: "30px" }}>

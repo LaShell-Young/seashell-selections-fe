@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import api from '../../api/axiosConfig'
+// import api from '../../api/axiosConfig'
 import './Activities.css'
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
@@ -28,40 +28,52 @@ const ActivitiesList = ({ activities }) => {
 
     const getActivitiesByName = async () => {
         try {
-            const response = await api.get(`/api/activities/name/${searchInput}`);
-
-            setSelectedItems(response.data);
+            // const response = await api.get(`/api/activities/name/${searchInput}`);
+            // setSelectedItems(response.data);
             // console.log(response.data);
+            const byName = activities.filter((item) => {
+                return item.name.includes(searchInput);
+            })
+            setSelectedItems(byName);
         } catch (err) {
             console.log(err);
         }
     }
     const getActivitiesByType = async () => {
         try {
-            const response = await api.get(`/api/activities/type/${searchInput}`);
-
-            setSelectedItems(response.data);
+            // const response = await api.get(`/api/activities/type/${searchInput}`);
+            // setSelectedItems(response.data);
             // console.log(response.data);
+            const byType = activities.filter((item) => {
+                return item.type.includes(searchInput.toLowerCase());
+            })
+            setSelectedItems(byType);
         } catch (err) {
             console.log(err);
         }
     }
     const getActivitiesByRating = async () => {
         try {
-            const response = await api.get(`/api/activities/rate/${searchInput}`);
-
-            setSelectedItems(response.data);
+            // const response = await api.get(`/api/activities/rate/${searchInput}`);
+            // setSelectedItems(response.data);
             // console.log(response.data);
+            const byRating = activities.filter((item) => {
+                return item.rating == searchInput;
+            })
+            setSelectedItems(byRating);
         } catch (err) {
             console.log(err);
         }
     }
     const getActivitiesByStatus = async () => {
         try {
-            const response = await api.get(`/api/activities/status/${searchInput}`);
-
-            setSelectedItems(response.data);
+            // const response = await api.get(`/api/activities/status/${searchInput}`);
+            // setSelectedItems(response.data);
             // console.log(response.data);
+            const byStatus = activities.filter((item) => {
+                return item.status == searchInput.toLowerCase();
+            })
+            setSelectedItems(byStatus);
         } catch (err) {
             console.log(err);
         }
@@ -163,14 +175,14 @@ const ActivitiesList = ({ activities }) => {
                         />
                         : selectedIndex == 1 ?
                             <ToggleButtonGroup
-                                color="info"
+                                color="warning"
                                 value={activityTypes[alignment]}
                                 exclusive
                                 onChange={handleChange2}
                                 aria-label="Platform"
-                                itemProp={{
-                                    style: { color: 'gold' },
-                                }}
+                            // itemProp={{
+                            //     style: { color: 'gold' },
+                            // }}
                             >
                                 <ToggleButton style={{ color: "gold" }} value='active'>active</ToggleButton>
                                 <ToggleButton style={{ color: "gold" }} value='travel'>travel</ToggleButton>
