@@ -1,15 +1,5 @@
 export const entertainment = [
   {
-    "title": "Inyuaski: the last hero",
-    "type": "show",
-    "trailerLink": "https://www.youtube.com/watch?v=lUE-ECSIFrM",
-    "genres": ["animation", "action"],
-    "poster": "",
-    "backdrops": [],
-    "rating": 4,
-    "hasWatched": false
-  },
-  {
     "title": "Derry girls",
     "type": "show",
     "trailerLink": "https://www.youtube.com/watch?v=UFmFuXH0IRY",
@@ -605,5 +595,15 @@ export const entertainment = [
     ],
     "rating": 3,
     "hasWatched": false
-  }
+  },
+  {
+    "title": "Inyuaski: the last hero",
+    "type": "show",
+    "trailerLink": "https://www.youtube.com/watch?v=lUE-ECSIFrM",
+    "genres": ["animation", "action"],
+    "poster": "",
+    "backdrops": [],
+    "rating": 4,
+    "hasWatched": false
+  },
 ]
