@@ -4,8 +4,8 @@ import Carousel from 'react-material-ui-carousel';
 import { Paper } from '@mui/material';
 
 const Hero = ({ entertainment }) => {
-    console.log("entertainment in hero")
-    console.log(entertainment)
+    // console.log("entertainment in hero")
+    // console.log(entertainment)
 
     const carouselSize = 20;
     const [carouselItems, setCarouselItems] = useState();
@@ -38,10 +38,10 @@ const Hero = ({ entertainment }) => {
 
     useEffect(() => {
         getCarouselItems(entertainment);
-    }, [entertainment])
+    }, [])
 
-    console.log("carouselItems in hero")
-    console.log(carouselItems)
+    // console.log("carouselItems in hero")
+    // console.log(carouselItems)
 
     return (
         <div>
@@ -49,12 +49,14 @@ const Hero = ({ entertainment }) => {
                 <Carousel>
                     {carouselItems.map((item) => {
                         return (
-                            <Paper key={item.id}>
+                            <Paper key={item}>
                                 <div className='entertainment-card-container'>
                                     <div className='entertainment-card' style={{ "--img": `url(${item.backdrops[0]})` }}>
                                         <div className='entertainment-detail'>
                                             <div className='entertainment-poster'>
-                                                <img src={item.poster} alt="film poster" />
+                                                <a href={item.trailerLink} target='_blank'>
+                                                    <img src={item.poster} alt="film poster" style={{ width: "100%", height: "100%" }} />
+                                                </a>
                                             </div>
                                             <div className='entertainment-title'>
                                                 <h4>{item.title}</h4>
