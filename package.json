@@ -1,6 +1,7 @@
 {
   "name": "fe-autumn-selections",
   "version": "0.1.0",
+  "homepage": "https://LaShell-Young.github.io/autumn-selections-fe",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.6",
