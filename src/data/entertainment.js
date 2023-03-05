@@ -195,7 +195,7 @@ export const entertainment = [
     "hasWatched": false
   },
   {
-    "title": "Ride of the planet of the apes trilogy",
+    "title": "Rise of the planet of the apes trilogy",
     "type": "movie",
     "trailerLink": "https://www.youtube.com/watch?v=Rwp58drJh2A",
     "genres": ["sci-fi", "action", "suspense"],
