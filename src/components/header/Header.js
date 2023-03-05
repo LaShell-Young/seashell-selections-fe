@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <Navbar bg='dark' variant='dark' expand="lg" style={{ "margin": "0px" }}>
             <Container fluid>
-                <Navbar.Brand href='/' style={{ "color": 'gold' }}>
+                <Navbar.Brand href='/autumn-selections-fe/' style={{ "color": 'gold' }}>
                     <FontAwesomeIcon icon={faFrog} /> Autumn Selections
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls='navbarScroll' />
@@ -18,7 +18,7 @@ const Header = () => {
                         style={{ maxHeight: '100px' }}
                         navbarScroll
                     >
-                        <NavLink className="nav-link" to="/">Home</NavLink>
+                        <NavLink className="nav-link" to="/autumn-selections-fe/">Home</NavLink>
                         <NavLink className="nav-link" to="/activities">Activites</NavLink>
                     </Nav>
                 </Navbar.Collapse>
