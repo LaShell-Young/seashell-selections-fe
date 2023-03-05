@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <Navbar bg='dark' variant='dark' expand="lg">
+        <Navbar bg='dark' variant='dark' expand="lg" style={{ "margin": "0px" }}>
             <Container fluid>
                 <Navbar.Brand href='/' style={{ "color": 'gold' }}>
                     <FontAwesomeIcon icon={faFrog} /> Autumn Selections

@@ -1,17 +1,52 @@
-/* .entertainment-card {
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-} */
-.entertainment-detail {
-  position: absolute;
-  top: 200px;
-  display: flex;
+.search-field {
+  color: "gold";
+  background-color: rgb(53, 50, 50);
+  border-radius: 10px;
+}
+
+.search-field-container {
+  display: inline;
+  margin-left: 5px;
+}
+
+.entertainment-det {
+  /* position: absolute; */
   justify-content: space-evenly;
-  width: 100%;
+  width: fit-content;
 }
 .entertainment-title {
   color: white;
   display: flex;
   align-items: center;
+}
+
+.entertainment-poster {
+  height: 300px;
+  border: 1px solid gold;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.entertainment-poster > img {
+  height: 100%;
+  width: 100%;
+}
+
+.entertainment-title {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.list-item {
+  display: flex;
+  margin-bottom: 20px;
+}
+.list-content {
+  width: 100%;
+  background-color: #ddd4d4;
+  padding: 10px;
 }
