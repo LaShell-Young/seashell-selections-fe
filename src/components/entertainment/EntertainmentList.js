@@ -250,7 +250,7 @@ const EntertainmentList = ({ entertainment }) => {
                                     <div className='entertainment-det'>
                                         <div className='entertainment-poster'>
                                             <a href={item.trailerLink} target='_blank'>
-                                                <img src={item.poster} alt="film poster" style={{ width: "100%", height: "100%" }} />
+                                                <img src={item.poster} alt="film poster" style={{ maxWidth: "350px", maxHeight: "400px", width: "100%", height: "100%" }} />
                                             </a>
                                         </div>
                                         <div className='entertainment-title'>
