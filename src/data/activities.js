@@ -90,7 +90,7 @@ export const activities = [
     "rating": 0
   },
   {
-    "name": "Bating cage",
+    "name": "Batting cage",
     "type": "active",
     "status": "pending",
     "rating": 0
