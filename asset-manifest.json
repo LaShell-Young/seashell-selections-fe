@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/autumn-selections-fe/static/css/main.f551fbb9.css",
-    "main.js": "/autumn-selections-fe/static/js/main.68843558.js",
+    "main.css": "/autumn-selections-fe/static/css/main.32317293.css",
+    "main.js": "/autumn-selections-fe/static/js/main.22909759.js",
     "index.html": "/autumn-selections-fe/index.html",
-    "main.f551fbb9.css.map": "/autumn-selections-fe/static/css/main.f551fbb9.css.map",
-    "main.68843558.js.map": "/autumn-selections-fe/static/js/main.68843558.js.map"
+    "main.32317293.css.map": "/autumn-selections-fe/static/css/main.32317293.css.map",
+    "main.22909759.js.map": "/autumn-selections-fe/static/js/main.22909759.js.map"
   },
   "entrypoints": [
-    "static/css/main.f551fbb9.css",
-    "static/js/main.68843558.js"
+    "static/css/main.32317293.css",
+    "static/js/main.22909759.js"
   ]
 }
