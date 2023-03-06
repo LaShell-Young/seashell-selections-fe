@@ -29,6 +29,8 @@
 .entertainment-poster > img {
   height: 100%;
   width: 100%;
+  max-width: 250px;
+  max-height: 500px;
 }
 
 .entertainment-title {
