@@ -55,7 +55,7 @@ const Hero = ({ entertainment }) => {
                                         <div className='entertainment-detail'>
                                             <div className='entertainment-poster'>
                                                 <a href={item.trailerLink} target='_blank'>
-                                                    <img src={item.poster} alt="film poster" style={{ maxWidth: "250px", maxHeight: "500px", width: "100%", height: "100%" }} />
+                                                    <img src={item.poster} alt="film poster" style={{ maxWidth: "250px", maxHeight: "550px", width: "100%", height: "100%" }} />
                                                 </a>
                                             </div>
                                             <div className='entertainment-title'>
