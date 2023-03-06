@@ -248,9 +248,9 @@ const EntertainmentList = ({ entertainment }) => {
                             return (
                                 <div className='col-sm-6 col-md-3' key={item}>
                                     <div className='entertainment-det'>
-                                        <div className='entertainment-poster'>
+                                        <div className='entertainment-poster' style={{ maxWidth: "250px", maxHeight: "600px", width: "100%", height: "100%" }}>
                                             <a href={item.trailerLink} target='_blank'>
-                                                <img src={item.poster} alt="film poster" style={{ maxWidth: "250px", maxHeight: "550px", width: "100%", height: "100%" }} />
+                                                <img src={item.poster} alt="film poster" style={{ maxWidth: "250px", maxHeight: "600px", width: "100%", height: "100%" }} />
                                             </a>
                                         </div>
                                         <div className='entertainment-title'>
