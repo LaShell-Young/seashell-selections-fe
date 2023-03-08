@@ -658,7 +658,7 @@ export const entertainment = [
     "title": "Tell it to the bees",
     "type": "movie",
     "trailerLink": "https://www.youtube.com/watch?v=Chy5sjUQ8pc",
-    "genres": ["romance", "drama"],
+    "genres": ["romance", "drama", "gay"],
     "poster": "https://www.themoviedb.org/t/p/original/Rj6zpHhMU1zFW3v28U4PSRSRgP.jpg",
     "backdrops": ["https://www.themoviedb.org/t/p/original/dH76jjukPJEkaqA0VwuXMcIfdYN.jpg",
       "https://www.themoviedb.org/t/p/original/sIyYeeSlSwzckJ0D3bRMwxdRTp6.jpg"
@@ -670,7 +670,7 @@ export const entertainment = [
     "title": "Summerland",
     "type": "movie",
     "trailerLink": "https://www.youtube.com/watch?v=7RSd4tywJIw",
-    "genres": ["romance", "drama", "period piece"],
+    "genres": ["romance", "drama", "period piece", "gay"],
     "poster": "https://www.themoviedb.org/t/p/original/kWnBoTZazuylwbIAVvHqB08wJgi.jpg",
     "backdrops": ["https://www.themoviedb.org/t/p/original/eMc0F339A0vGLv5b80d3IFDcrHX.jpg",
       "https://www.themoviedb.org/t/p/original/idV2S95f6iBluiGEI808oeRiGFQ.jpg"
