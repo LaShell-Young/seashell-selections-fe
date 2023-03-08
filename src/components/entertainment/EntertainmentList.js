@@ -240,6 +240,11 @@ const EntertainmentList = ({ entertainment }) => {
                         />
                     }
                 </div>
+                <div >
+                    <div style={{ display: "inline" }}>All genres: 'Action', 'Comedy', 'Crime', 'Suspense', 'Sci-fi', 'History', </div>
+                    <div style={{ display: "inline" }}>'Romance', 'Gay', 'Thriller', 'Drama', 'Western', 'Adventure', 'Fantasy', </div>
+                    <div style={{ display: "inline" }}>'Mystery', 'Animation', 'Period piece', 'Spanish', 'Horror'</div>
+                </div>
             </div>
             <div className='containter'>
                 <div className='row justify-content-center'>
