@@ -606,4 +606,88 @@ export const entertainment = [
     "rating": 4,
     "hasWatched": false
   },
+  {
+    "title": "No good deed",
+    "type": "movie",
+    "trailerLink": "https://www.youtube.com/watch?v=R_b4X4oHdJU",
+    "genres": ["thriller", "crime"],
+    "poster": "https://www.themoviedb.org/t/p/original/wcDLqCS70LsPcovieuQrb311Qr1.jpg",
+    "backdrops": ["https://www.themoviedb.org/t/p/original/wRaYu8zCTknQ1YO8v5VPzSzvQSi.jpg",
+      "https://www.themoviedb.org/t/p/original/mkpDPtU7jWfKcYjEcN8DEYsiQuP.jpg"
+    ],
+    "rating": 3,
+    "hasWatched": false
+  },
+  {
+    "title": "Miss congeniality",
+    "type": "movie",
+    "trailerLink": "https://www.youtube.com/watch?v=8emJD-rR9Cs",
+    "genres": ["comedy", "action", "crime"],
+    "poster": "https://www.themoviedb.org/t/p/original/2nsLhfzsbnFGg8wUOoZguz3LKDu.jpg",
+    "backdrops": ["https://www.themoviedb.org/t/p/original/mOiev1e5k6jERa4EyxSUN1VWwRw.jpg",
+      "https://www.themoviedb.org/t/p/original/fgiRpFDB1YEQdBr3TYjATffFbYJ.jpg"
+    ],
+    "rating": 3,
+    "hasWatched": false
+  },
+  {
+    "title": "Chronicle",
+    "type": "movie",
+    "trailerLink": "https://www.youtube.com/watch?v=UD0DshFbmxA",
+    "genres": ["drama", "suspense", "sci-fi"],
+    "poster": "https://www.themoviedb.org/t/p/original/xENglsVIIWEEhhB5lgpy33tGcKI.jpg",
+    "backdrops": ["https://www.themoviedb.org/t/p/original/5rAu7jnCDlgeYxUb6sYsq1cP4dJ.jpg",
+      "https://www.themoviedb.org/t/p/original/dSenLre8bRAy0AxsjFlJOA6csyv.jpg"
+    ],
+    "rating": 3,
+    "hasWatched": false
+  },
+  {
+    "title": "The heat",
+    "type": "movie",
+    "trailerLink": "https://www.youtube.com/watch?v=c-KKx0lcn2A",
+    "genres": ["comedy", "action", "crime"],
+    "poster": "https://www.themoviedb.org/t/p/original/yERBa1y5zNUOTRKQPiDCPIc2fuv.jpg",
+    "backdrops": ["https://www.themoviedb.org/t/p/original/e6dXJHR4UkYnNlEF0MsX5OjPEkQ.jpg",
+      "https://www.themoviedb.org/t/p/original/c0V8KAiuoWLXf7TfvwHK4yhIfb9.jpg"
+    ],
+    "rating": 3,
+    "hasWatched": false
+  },
+  {
+    "title": "Tell it to the bees",
+    "type": "movie",
+    "trailerLink": "https://www.youtube.com/watch?v=Chy5sjUQ8pc",
+    "genres": ["romance", "drama"],
+    "poster": "https://www.themoviedb.org/t/p/original/Rj6zpHhMU1zFW3v28U4PSRSRgP.jpg",
+    "backdrops": ["https://www.themoviedb.org/t/p/original/dH76jjukPJEkaqA0VwuXMcIfdYN.jpg",
+      "https://www.themoviedb.org/t/p/original/sIyYeeSlSwzckJ0D3bRMwxdRTp6.jpg"
+    ],
+    "rating": 3,
+    "hasWatched": false
+  },
+  {
+    "title": "Summerland",
+    "type": "movie",
+    "trailerLink": "https://www.youtube.com/watch?v=7RSd4tywJIw",
+    "genres": ["romance", "drama", "period piece"],
+    "poster": "https://www.themoviedb.org/t/p/original/kWnBoTZazuylwbIAVvHqB08wJgi.jpg",
+    "backdrops": ["https://www.themoviedb.org/t/p/original/eMc0F339A0vGLv5b80d3IFDcrHX.jpg",
+      "https://www.themoviedb.org/t/p/original/idV2S95f6iBluiGEI808oeRiGFQ.jpg"
+    ],
+    "rating": 3,
+    "hasWatched": false
+  },
+  {
+    "title": "Mad money",
+    "type": "movie",
+    "trailerLink": "https://www.youtube.com/watch?v=4QHauAUTA9Q",
+    "genres": ["comedy", "action", "crime"],
+    "poster": "https://www.themoviedb.org/t/p/original/le0r7Hf7YOy3QFdOoYXRI29T1mW.jpg",
+    "backdrops": ["https://www.themoviedb.org/t/p/original/t4tbQTCrezydXT94inpaYTRbUiI.jpg",
+      "https://www.themoviedb.org/t/p/original/mGG8qqSBK7EKN2cOVBlVef1Y3N4.jpg"
+    ],
+    "rating": 3,
+    "hasWatched": false
+  }
 ]
