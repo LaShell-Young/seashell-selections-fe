@@ -689,5 +689,17 @@ export const entertainment = [
     ],
     "rating": 3,
     "hasWatched": false
+  },
+  {
+    "title": "Constantine",
+    "type": "movie",
+    "trailerLink": "https://www.youtube.com/watch?v=DEa508Xmmio",
+    "genres": ["fantasy", "action", "horror"],
+    "poster": "https://www.themoviedb.org/t/p/original/vs3rNZ0hLysEuYTeX6nn6iDoKMQ.jpg",
+    "backdrops": ["https://www.themoviedb.org/t/p/original/90pSsoZ4Wg5Al8ImsTwlHqBzr7e.jpg",
+      "https://www.themoviedb.org/t/p/original/wARTxmw3VT2rC9fWV1sJghYgEKU.jpg"
+    ],
+    "rating": 3,
+    "hasWatched": false
   }
 ]

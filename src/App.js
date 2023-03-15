@@ -13,33 +13,6 @@ function App() {
   const [_entertainment, setEntertainment] = useState(entertainment);
   const [_activities, setActivities] = useState(activities);
 
-  // const getEntertainment = async () => {
-  //   try {
-  //     const response = await api.get("/api/entertainment/all");
-
-  //     setEntertainment(response.data);
-  //     // console.log("get all entertainment");
-  //     // console.log(response.data);
-  //   } catch (err) {
-  //     console.log(err);
-  //   }
-  // }
-  // const getActivities = async () => {
-  //   try {
-  //     // const response = await api.get("/api/activities/all");
-
-  //     setActivities(response.data);
-  //     // console.log(response.data);
-  //   } catch (err) {
-  //     console.log(err);
-  //   }
-  // }
-
-  // useEffect(() => {
-  //   getEntertainment();
-  //   getActivities();
-  // }, []);
-
   return (
     <div className="App">
       <Header />
