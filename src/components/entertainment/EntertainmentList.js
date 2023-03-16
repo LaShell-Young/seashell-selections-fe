@@ -139,7 +139,7 @@ const EntertainmentList = ({ entertainment }) => {
     const setLabel = (index) => {
         switch (index) {
             case 1:
-                return 'Enter "movie" or "show"';
+                return 'Enter "movie" or "series"';
                 break;
             case 2:
                 return 'Enter comma separate values';

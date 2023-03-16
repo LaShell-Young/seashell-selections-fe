@@ -1,7 +1,7 @@
 export const entertainment = [
   {
     "title": "Derry girls",
-    "type": "show",
+    "type": "series",
     "trailerLink": "https://www.youtube.com/watch?v=UFmFuXH0IRY",
     "genres": ["comedy"],
     "poster": "https://image.tmdb.org/t/p/original/jVgbsFE2neCJwMvbo6nUiOR4eer.jpg",
@@ -14,7 +14,7 @@ export const entertainment = [
   },
   {
     "title": "Fleabag",
-    "type": "show",
+    "type": "series",
     "trailerLink": "https://www.youtube.com/watch?v=I5Uv6cb9YRs",
     "genres": ["comedy"],
     "poster": "https://image.tmdb.org/t/p/original/27vEYsRKa3eAniwmoccOoluEXQ1.jpg",
@@ -27,7 +27,7 @@ export const entertainment = [
   },
   {
     "title": "Killing eve",
-    "type": "show",
+    "type": "series",
     "trailerLink": "https://www.youtube.com/watch?v=Kk0PyD-XNZA",
     "genres": ["action", "comedy"],
     "poster": "https://image.tmdb.org/t/p/original/4wKhTVw8aGq5AZMa0Q1spERdi7n.jpg",
@@ -40,7 +40,7 @@ export const entertainment = [
   },
   {
     "title": "Violet evergarden",
-    "type": "show",
+    "type": "series",
     "trailerLink": "https://www.youtube.com/watch?v=tNpWUtEdHJw",
     "genres": ["animation", "action", "adventure"],
     "poster": "https://image.tmdb.org/t/p/original/ImvHbM4GsJJykarnOzhtpG6ax6.jpg",
@@ -53,7 +53,7 @@ export const entertainment = [
   },
   {
     "title": "Warrior nun",
-    "type": "show",
+    "type": "series",
     "trailerLink": "https://www.youtube.com/watch?v=g4yWWywix_s",
     "genres": ["action"],
     "poster": "https://image.tmdb.org/t/p/original/77OM9jMJ8nglaolHLwrAW7kvadV.jpg",
@@ -66,7 +66,7 @@ export const entertainment = [
   },
   {
     "title": "The L word",
-    "type": "show",
+    "type": "series",
     "trailerLink": "https://www.youtube.com/watch?v=Yh-sIBhc3-s",
     "genres": ["drama", "gay"],
     "poster": "https://image.tmdb.org/t/p/original/cRuye5mp69wfnsbfgJiBFQJQo1e.jpg",
@@ -105,7 +105,7 @@ export const entertainment = [
   },
   {
     "title": "Spartacus",
-    "type": "show",
+    "type": "series",
     "trailerLink": "https://www.youtube.com/watch?v=eJiBouML3FQ",
     "genres": ["action", "drama"],
     "poster": "https://image.tmdb.org/t/p/original/i6KrMYFWokJWc8PaczYSe6uhel4.jpg",
@@ -209,7 +209,7 @@ export const entertainment = [
   },
   {
     "title": "Cable girls",
-    "type": "show",
+    "type": "series",
     "trailerLink": "https://www.youtube.com/watch?v=e_lBUTT4e7k",
     "genres": ["period piece", "drama", "Spanish"],
     "poster": "https://image.tmdb.org/t/p/original/lAwLmgq1zy0xJnusszmvWTLjFlO.jpg",
@@ -273,7 +273,7 @@ export const entertainment = [
   },
   {
     "title": "Altered carbon",
-    "type": "show",
+    "type": "series",
     "trailerLink": "https://www.youtube.com/watch?v=DpyNN3WJEFY",
     "genres": ["sci-fi", "fantasy"],
     "poster": "https://image.tmdb.org/t/p/original/pZg2NUDPJA54AmDs1Y1ZLizBrpd.jpg",
@@ -286,7 +286,7 @@ export const entertainment = [
   },
   {
     "title": "Konosuba",
-    "type": "show",
+    "type": "series",
     "trailerLink": "https://www.youtube.com/watch?v=N1AO7k2o78g",
     "genres": ["animation", "action", "adventure", "comedy", "fantasy"],
     "poster": "https://image.tmdb.org/t/p/original/oRaOeQlwktbGSd2T31FYAcgHZlh.jpg",
@@ -429,7 +429,7 @@ export const entertainment = [
   },
   {
     "title": "Reno 911",
-    "type": "show",
+    "type": "series",
     "trailerLink": "https://www.youtube.com/watch?v=buTDszlOymA",
     "genres": ["comedy"],
     "poster": "https://image.tmdb.org/t/p/original/a12e96lgZWmSGy2MHzudXcHpSHy.jpg",
@@ -546,7 +546,7 @@ export const entertainment = [
   },
   {
     "title": "I am a hero",
-    "type": "show",
+    "type": "series",
     "trailerLink": "https://www.youtube.com/watch?v=gmzIQdmDZUY",
     "genres": ["action", "drama", "suspense"],
     "poster": "https://image.tmdb.org/t/p/original/4RnmHtCLtbBHD9jagVlcSzJTWX6.jpg",
@@ -598,7 +598,7 @@ export const entertainment = [
   },
   {
     "title": "Inyuaski: the last hero",
-    "type": "show",
+    "type": "series",
     "trailerLink": "https://www.youtube.com/watch?v=lUE-ECSIFrM",
     "genres": ["animation", "action"],
     "poster": "",
