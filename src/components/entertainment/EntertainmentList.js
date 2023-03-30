@@ -51,7 +51,8 @@ const EntertainmentList = ({ entertainment }) => {
             // setSelectedItems(response.data);
 
             const byTitle = entertainment.filter((item) => {
-                return item.title.includes(searchInput);
+                let search = searchInput[0].toUpperCase() + searchInput.substring(1);
+                return item.title.includes(search) + item.title.includes(searchInput);
             })
 
             setSelectedItems(byTitle);
