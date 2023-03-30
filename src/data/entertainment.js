@@ -1,5 +1,31 @@
 export const entertainment = [
   {
+    "title": "Dungeons & dragons: honor among thieves",
+    "type": "movie",
+    "trailerLink": "https://www.youtube.com/watch?v=IiMinixSXII",
+    "genres": ["comedy", "adventure", "fantasy"],
+    "poster": "https://www.themoviedb.org/t/p/original/6LuXaihVIoJ5FeSiFb7CZMtU7du.jpg",
+    "backdrops": [
+      "https://www.themoviedb.org/t/p/original/fh7aM10THQzivGU7kAkgKrgzot4.jpg",
+      "https://www.themoviedb.org/t/p/original/iCXpRJNK6th4AAtAJbfwCjjetI5.jpg"
+    ],
+    "rating": 3,
+    "hasWatched": false
+  },
+  {
+    "title": "Last holiday",
+    "type": "movie",
+    "trailerLink": "https://www.youtube.com/watch?v=JO0NSRPcPFs",
+    "genres": ["comedy", "adventure", "drama"],
+    "poster": "https://www.themoviedb.org/t/p/original/khcU8msd2NooJwmcvwbWguvkCzU.jpg",
+    "backdrops": [
+      "https://www.themoviedb.org/t/p/original/4cxrtFPsUzFfcWMYzKnOpcNhKAg.jpg",
+      "https://www.themoviedb.org/t/p/original/iFPlkyBAKbIa6gv0FAuVG2v6kgT.jpg"
+    ],
+    "rating": 3,
+    "hasWatched": false
+  },
+  {
     "title": "Derry girls",
     "type": "series",
     "trailerLink": "https://www.youtube.com/watch?v=UFmFuXH0IRY",
@@ -8,6 +34,19 @@ export const entertainment = [
     "backdrops": [
       "https://image.tmdb.org/t/p/original/verc58LcQ1BvTY4RLUWxoqMOldR.jpg",
       "https://image.tmdb.org/t/p/original/4zvFtJmfQptIO3A2RLQkLLYW5Ho.jpg"
+    ],
+    "rating": 3,
+    "hasWatched": false
+  },
+  {
+    "title": "Bringing down the house",
+    "type": "movie",
+    "trailerLink": "https://www.youtube.com/watch?v=BhT8A83MhaI",
+    "genres": ["comedy", "drama"],
+    "poster": "https://www.themoviedb.org/t/p/original/qJy3w7OiBC44QCpIPzTgWiIvFhq.jpg",
+    "backdrops": [
+      "https://www.themoviedb.org/t/p/original/uYvWSQDfeW6foi3fuSViEjoHPqO.jpg",
+      "https://www.themoviedb.org/t/p/original/nqfFEZgGDsFAlgPMtn2C9EMwGQ1.jpg"
     ],
     "rating": 3,
     "hasWatched": false
@@ -23,6 +62,45 @@ export const entertainment = [
       "https://image.tmdb.org/t/p/original/uuU3pkcnSTOTjf6Ex6CxDK0jwaS.jpg"
     ],
     "rating": 4,
+    "hasWatched": false
+  },
+  {
+    "title": "Pitch black",
+    "type": "movie",
+    "trailerLink": "https://www.youtube.com/watch?v=fIeSV4i7bxQ",
+    "genres": ["action", "thriller", "sci-fi"],
+    "poster": "https://www.themoviedb.org/t/p/original/3AnlxZ5CZnhKKzjgFyY6EHxmOyl.jpg",
+    "backdrops": [
+      "https://www.themoviedb.org/t/p/original/mZGwhwIwYuF0G9XLS8j23dhNfUC.jpg",
+      "https://www.themoviedb.org/t/p/original/lslE5igXrdRb1Zg8xvC80gE3L7P.jpg"
+    ],
+    "rating": 3,
+    "hasWatched": false
+  },
+  {
+    "title": "The chronicles of riddick",
+    "type": "movie",
+    "trailerLink": "https://www.youtube.com/watch?v=LCrDo3eCXkw",
+    "genres": ["action", "sci-fi"],
+    "poster": "https://www.themoviedb.org/t/p/original/iowZ2cwHFuxrSV3xsEN1LCM0Pgn.jpg",
+    "backdrops": [
+      "https://www.themoviedb.org/t/p/original/lt3NqorBMWn786m9bzqM0OLdMS8.jpg",
+      "https://www.themoviedb.org/t/p/original/wgCq9LzOEhUl6PMANyP9YW1tgiA.jpg"
+    ],
+    "rating": 3,
+    "hasWatched": false
+  },
+  {
+    "title": "Riddick",
+    "type": "movie",
+    "trailerLink": "https://www.youtube.com/watch?v=iP3eFIOBU0k",
+    "genres": ["action", "sci-fi", "thriller"],
+    "poster": "https://www.themoviedb.org/t/p/original/pUul9pGWOKT7X0smkTvsIEIQxcP.jpg",
+    "backdrops": [
+      "https://www.themoviedb.org/t/p/original/uFC1LiMIoiE9ScGGG68u9g5jzvn.jpg",
+      "https://www.themoviedb.org/t/p/original/zDSKi8mcQcykV8yk7nCne3hFaZy.jpg"
+    ],
+    "rating": 3,
     "hasWatched": false
   },
   {
