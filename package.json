@@ -1,7 +1,7 @@
 {
   "name": "fe-autumn-selections",
   "version": "0.1.0",
-  "homepage": "http://lashell-young.github.io/seashell-selections-fe",
+  "homepage": "http://lashell-young.github.io/autumn-selections-fe",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.6",
