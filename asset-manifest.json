@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/autumn-selections-fe/static/css/main.755d790b.css",
-    "main.js": "/autumn-selections-fe/static/js/main.ac18589e.js",
-    "index.html": "/autumn-selections-fe/index.html",
-    "main.755d790b.css.map": "/autumn-selections-fe/static/css/main.755d790b.css.map",
-    "main.ac18589e.js.map": "/autumn-selections-fe/static/js/main.ac18589e.js.map"
+    "main.css": "/seashell-selections-fe/static/css/main.755d790b.css",
+    "main.js": "/seashell-selections-fe/static/js/main.88653139.js",
+    "index.html": "/seashell-selections-fe/index.html",
+    "main.755d790b.css.map": "/seashell-selections-fe/static/css/main.755d790b.css.map",
+    "main.88653139.js.map": "/seashell-selections-fe/static/js/main.88653139.js.map"
   },
   "entrypoints": [
     "static/css/main.755d790b.css",
-    "static/js/main.ac18589e.js"
+    "static/js/main.88653139.js"
   ]
 }
