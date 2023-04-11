@@ -18,7 +18,7 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Layout />}>
-          <Route path='/autumn-selections-fe/' element={<Home entertainment={_entertainment} />}></Route>
+          <Route path='/seashell-selections-fe/' element={<Home entertainment={_entertainment} />}></Route>
           <Route path='/activities' element={<ActivitiesPage activities={_activities} />}></Route>
         </Route>
       </Routes>
