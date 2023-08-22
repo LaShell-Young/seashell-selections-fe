@@ -1,98 +1,106 @@
 export const activities = [
   {
-    "name": "camping",
+    "name": "Camping",
     "type": "active",
-    "status": "pending",
-    "rating": 0
+    "rating": null,
+    "description": "the act of staying and sleeping in an outside area for one or more days and nights, usually in a tent.",
+    "details": "",
+    "link": ""
   },
   {
-    "name": "Last of us 2",
-    "type": "gaming",
-    "status": "in-progress",
-    "rating": 5
+    "name": "Dinosaur Valley State Park",
+    "type": "park",
+    "rating": null,
+    "description": "Dinosaur Valley State Park is a state park near Glen Rose, Texas, United States.",
+    "details": "Address: Glen Rose, TX 76043",
+    "link": "https://tpwd.texas.gov/state-parks/dinosaur-valley"
   },
   {
     "name": "Paddle boarding",
     "type": "active",
-    "status": "done",
-    "rating": 4
-  },
-  {
-    "name": "Write a book",
-    "type": "educational",
-    "status": "in-progress",
-    "rating": 0
+    "rating": 4,
+    "description": "",
+    "details": "",
+    "link": ""
   },
   {
     "name": "Ziplining",
     "type": "active",
-    "status": "pending",
-    "rating": 0
+    "rating": 0,
+    "description": "",
+    "details": "",
+    "link": ""
   },
   {
     "name": "Renaissance fair",
     "type": "attraction",
-    "status": "pending",
-    "rating": 0
+    "rating": 0,
+    "description": "",
+    "details": "",
+    "link": ""
   },
   {
     "name": "City fair",
     "type": "attraction",
-    "status": "pending",
-    "rating": 0
+    "rating": 0,
+    "description": "",
+    "details": "",
+    "link": ""
   },
   {
     "name": "Ferris wheel",
     "type": "attraction",
-    "status": "pending",
-    "rating": 0
+    "rating": 0,
+    "description": "",
+    "details": "",
+    "link": ""
   },
   {
     "name": "rock climbing",
     "type": "active",
-    "status": "pending",
-    "rating": 0
-  },
-  {
-    "name": "Trip to Spain",
-    "type": "travel",
-    "status": "pending",
-    "rating": 0
+    "rating": 0,
+    "description": "",
+    "details": "",
+    "link": ""
   },
   {
     "name": "Trip to Greece",
     "type": "travel",
-    "status": "pending",
-    "rating": 0
+    "rating": 0,
+    "description": "",
+    "details": "",
+    "link": ""
   },
   {
     "name": "Trip to Colorado",
     "type": "travel",
-    "status": "pending",
-    "rating": 0
+    "rating": 0,
+    "description": "",
+    "details": "",
+    "link": ""
   },
   {
     "name": "Karaoke bar",
     "type": "nightlife",
-    "status": "pending",
-    "rating": 0
+    "rating": 0,
+    "description": "",
+    "details": "",
+    "link": ""
   },
   {
     "name": "Roller skating",
     "type": "active",
-    "status": "pending",
-    "rating": 0
+    "rating": 0,
+    "description": "",
+    "details": "",
+    "link": ""
   },
   {
     "name": "Hiking",
     "type": "active",
-    "status": "pending",
-    "rating": 0
-  },
-  {
-    "name": "Batting cage",
-    "type": "active",
-    "status": "pending",
-    "rating": 0
+    "rating": 0,
+    "description": "",
+    "details": "",
+    "link": ""
   }
 ]

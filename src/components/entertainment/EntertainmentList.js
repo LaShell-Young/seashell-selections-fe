@@ -12,10 +12,10 @@ import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
 import TextField from '@mui/material/TextField';
 
-const options = ['Title', 'Type', 'Genre', 'Rating'];
-// const genreOptions = ['Action', 'Comedy', 'Crime', 'Suspense', 'Sci-fi', 'History',
-//     'Romance', 'Gay', 'Thriller', 'Drama', 'Western', 'Adventure', 'Fantasy', 'Mystery',
-//     'Animation', 'Period piece', 'Spanish', 'Horror'];
+// const options = ['Title', 'Type', 'Genre', 'Rating'];
+const options = ['Action', 'Comedy', 'Crime', 'Suspense', 'Sci-fi', 'History',
+    'Romance', 'Gay', 'Thriller', 'Drama', 'Western', 'Adventure', 'Fantasy', 'Mystery',
+    'Animation', 'Period piece', 'Spanish', 'Horror'];
 
 const EntertainmentList = ({ entertainment }) => {
     // console.log("entertainment in EntertainmentList")
@@ -26,18 +26,18 @@ const EntertainmentList = ({ entertainment }) => {
     const [selectedIndex, setSelectedIndex] = useState(0);
     const [searchInput, setSearchInput] = useState("");
 
-    const getEntertainmentByGenre = async () => {
+    const getEntertainmentByGenre = async (option) => {
         try {
             // const response = await api.get(`/api/entertainment/genre?genres=${searchInput}`);
             // setSelectedItems(response.data);
             const byGenre = entertainment.filter((item) => {
-                let genres = searchInput.split(", ");
+                // let genres = searchInput.split(", ");
 
-                for (let i = 0; i < genres.length; i++) {
-                    if (item.genres.includes(genres[i].toLowerCase())) {
-                        return true;
-                    }
+                // for (let i = 0; i < genres.length; i++) {
+                if (item.genres.includes(option.toLowerCase())) {
+                    return true;
                 }
+                // }
             })
 
             setSelectedItems(byGenre);
@@ -91,29 +91,32 @@ const EntertainmentList = ({ entertainment }) => {
         }
     }
 
-    const handleClick = () => {
+    const handleClick = (option, index) => {
+        setSelectedIndex(index);
+        setOpen(false);
         // call api using user input
         if (searchInput == "") {
             setSelectedItems(entertainment);
         } else {
-            switch (selectedIndex) {
-                case 0:
-                    getEntertainmentByTitle();
-                    break;
-                case 1:
-                    getEntertainmentByType();
-                    break;
-                case 2:
-                    getEntertainmentByGenre();
-                    break;
-                case 3:
-                    if (parseInt(searchInput) > 0 && parseInt(searchInput) <= 5) {
-                        getEntertainmentByRating();
-                    }
-                    break;
-            }
+            getEntertainmentByGenre(option);
+            // switch (selectedIndex) {
+            //     case 0:
+            //         getEntertainmentByTitle();
+            //         break;
+            //     case 1:
+            //         getEntertainmentByType();
+            //         break;
+            //     case 2:
+            //         getEntertainmentByGenre();
+            //         break;
+            //     case 3:
+            //         if (parseInt(searchInput) > 0 && parseInt(searchInput) <= 5) {
+            //             getEntertainmentByRating();
+            //         }
+            //         break;
+            // }
         }
-        // console.log(`You clicked ${options[selectedIndex]} with ${searchInput}`);
+        console.log(`You clicked ${options[selectedIndex]} with ${selectedIndex}`);
     };
 
     const handleMenuItemClick = (event, index) => {
@@ -162,17 +165,7 @@ const EntertainmentList = ({ entertainment }) => {
         <>
             <div style={{ margin: "30px" }}>
                 <ButtonGroup variant="contained" ref={anchorRef} aria-label="split button">
-                    <Button onClick={handleClick}>{`Search by ${options[selectedIndex]}`}</Button>
-                    <Button
-                        size="small"
-                        aria-controls={open ? 'split-button-menu' : undefined}
-                        aria-expanded={open ? 'true' : undefined}
-                        aria-label="select merge strategy"
-                        aria-haspopup="menu"
-                        onClick={handleToggle}
-                    >
-                        <ArrowDropDownIcon />
-                    </Button>
+                    <Button onClick={handleToggle}>{`Category`}</Button>
                 </ButtonGroup>
                 <Popper
                     sx={{
@@ -199,9 +192,9 @@ const EntertainmentList = ({ entertainment }) => {
                                             <MenuItem
                                                 key={option}
                                                 selected={index === selectedIndex}
-                                                onClick={(event) => handleMenuItemClick(event, index)}
+                                                onClick={(event) => handleClick(event, index)}
                                             >
-                                                {`Search by ${option}`}
+                                                {option}
                                             </MenuItem>
                                         ))}
                                     </MenuList>
@@ -210,42 +203,6 @@ const EntertainmentList = ({ entertainment }) => {
                         </Grow>
                     )}
                 </Popper>
-                <div className='search-field-container'>
-                    {selectedIndex !== 3 ?
-                        <TextField
-                            id="outlined-search"
-                            label={setLabel(selectedIndex)}
-                            type="search"
-                            className='search-field'
-                            InputLabelProps={{
-                                style: { color: 'gold' },
-                            }}
-                            InputProps={{
-                                style: { color: 'gold' }
-                            }}
-                            onChange={handleChange}
-                        />
-                        :
-                        <TextField
-                            id="outlined-number"
-                            label={setLabel(selectedIndex)}
-                            type="number"
-                            className='search-field'
-                            InputLabelProps={{
-                                style: { color: 'gold' },
-                            }}
-                            InputProps={{
-                                style: { color: 'gold' },
-                            }}
-                            onChange={handleChange}
-                        />
-                    }
-                </div>
-                <div >
-                    <div style={{ display: "inline" }}>All genres: 'Action', 'Comedy', 'Crime', 'Suspense', 'Sci-fi', 'History', </div>
-                    <div style={{ display: "inline" }}>'Romance', 'Gay', 'Thriller', 'Drama', 'Western', 'Adventure', 'Fantasy', </div>
-                    <div style={{ display: "inline" }}>'Mystery', 'Animation', 'Period piece', 'Spanish', 'Horror'</div>
-                </div>
             </div>
             <div className='containter'>
                 <div className='row justify-content-center'>
