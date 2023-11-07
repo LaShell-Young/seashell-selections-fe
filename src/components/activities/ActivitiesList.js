@@ -3,115 +3,40 @@ import React, { useEffect, useState } from 'react'
 import './Activities.css'
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import ClickAwayListener from '@mui/material/ClickAwayListener';
 import Grow from '@mui/material/Grow';
 import Paper from '@mui/material/Paper';
 import Popper from '@mui/material/Popper';
 import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
-import TextField from '@mui/material/TextField';
-import ToggleButton from '@mui/material/ToggleButton';
-import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 
-const options = ['Name', 'Type', 'Status', 'Rating'];
-const activityTypes = ['active', 'attraction', 'travel', 'educational', 'nightlife'];
-const statuses = ['pending', 'in-progress', 'done'];
+const options = ['All', 'Active', 'Attraction', 'Travel', 'Educational', 'Nightlife'];
+
 
 const ActivitiesList = ({ activities }) => {
     const [selectedItems, setSelectedItems] = useState();
     const [open, setOpen] = useState(false);
     const anchorRef = React.useRef(null);
-    const [selectedIndex, setSelectedIndex] = useState(1);
-    const [searchInput, setSearchInput] = useState("");
-    const [alignment, setAlignment] = useState(0);
 
-    const getActivitiesByName = async () => {
+    const getEntertainmentByGenre = (index) => {
         try {
-            // const response = await api.get(`/api/activities/name/${searchInput}`);
+            // const response = await api.get(`/api/entertainment/genre?genres=${searchInput}`);
             // setSelectedItems(response.data);
-            // console.log(response.data);
-            const byName = activities.filter((item) => {
-                return item.name.includes(searchInput);
-            })
-            setSelectedItems(byName);
-        } catch (err) {
-            console.log(err);
-        }
-    }
-    const getActivitiesByType = async () => {
-        try {
-            // const response = await api.get(`/api/activities/type/${searchInput}`);
-            // setSelectedItems(response.data);
-            // console.log(response.data);
-            const byType = activities.filter((item) => {
-                return item.type.includes(searchInput.toLowerCase());
-            })
-            setSelectedItems(byType);
-        } catch (err) {
-            console.log(err);
-        }
-    }
-    const getActivitiesByRating = async () => {
-        try {
-            // const response = await api.get(`/api/activities/rate/${searchInput}`);
-            // setSelectedItems(response.data);
-            // console.log(response.data);
-            const byRating = activities.filter((item) => {
-                return item.rating == searchInput;
-            })
-            setSelectedItems(byRating);
-        } catch (err) {
-            console.log(err);
-        }
-    }
-    const getActivitiesByStatus = async () => {
-        try {
-            // const response = await api.get(`/api/activities/status/${searchInput}`);
-            // setSelectedItems(response.data);
-            // console.log(response.data);
-            const byStatus = activities.filter((item) => {
-                return item.status == searchInput.toLowerCase();
-            })
-            setSelectedItems(byStatus);
-        } catch (err) {
-            console.log(err);
-        }
-    }
-
-    const handleClick = () => {
-        // call api using user input
-        if (searchInput == "") {
-            setSelectedItems(activities);
-        } else {
-            switch (selectedIndex) {
-                case 0:
-                    getActivitiesByName();
-                    break;
-                case 1:
-                    if (activityTypes.includes(searchInput.toLowerCase())) {
-                        getActivitiesByType();
+            setOpen(false);
+            if (options[index] == 'All') {
+                setSelectedItems(activities);
+            } else {
+                const byGenre = activities.filter((item) => {
+                    if (item.genres.includes(options[index].toLowerCase())) {
+                        return true;
                     }
-                    break;
-                case 2:
-                    if (statuses.includes(searchInput)) {
-                        getActivitiesByStatus();
-                    }
-                    break;
-                case 3:
-                    if (parseInt(searchInput) > 0 && parseInt(searchInput) <= 5) {
-                        getActivitiesByRating();
-                    }
-                    break;
+                })
+                setSelectedItems(byGenre);
             }
+        } catch (err) {
+            console.log(err);
         }
-        // console.log(`You clicked ${options[selectedIndex]} with ${searchInput}`);
-    };
-
-    const handleMenuItemClick = (event, index) => {
-        setSelectedIndex(index);
-        setOpen(false);
-    };
+    }
 
     const handleToggle = () => {
         setOpen((prevOpen) => !prevOpen);
@@ -125,32 +50,6 @@ const ActivitiesList = ({ activities }) => {
         setOpen(false);
     };
 
-    const handleChange = (event) => {
-        setSearchInput(event.target.value);
-    }
-
-    const handleChange2 = (event) => {
-        // console.log('new alignment')
-        // console.log(event.target.value)
-        setSearchInput(event.target.value)
-        setAlignment(activityTypes.indexOf(event.target.value));
-    };
-
-    const setLabel = (index) => {
-        switch (index) {
-            case 1:
-                return 'Ex: active/gaming/educational/';
-                break;
-            case 2:
-                return `Enter ${statuses.join(" or ")}`;
-                break;
-            case 3:
-                return 'Enter a whole number 1-5';
-            default:
-                return `Enter ${options[index]}`;
-        }
-    }
-
     useEffect(() => {
         setSelectedItems(activities);
     }, [])
@@ -158,65 +57,8 @@ const ActivitiesList = ({ activities }) => {
     return (
         <>
             <div style={{ margin: "30px" }}>
-                <div className='search-field-container'>
-                    {selectedIndex !== 1 && selectedIndex !== 3 ?
-                        <TextField
-                            id="outlined-search"
-                            label={setLabel(selectedIndex)}
-                            type="search"
-                            className='search-field'
-                            InputLabelProps={{
-                                style: { color: 'gold' },
-                            }}
-                            InputProps={{
-                                style: { color: 'gold' }
-                            }}
-                            onChange={handleChange}
-                        />
-                        : selectedIndex == 1 ?
-                            <ToggleButtonGroup
-                                color="warning"
-                                value={activityTypes[alignment]}
-                                exclusive
-                                onChange={handleChange2}
-                                aria-label="Platform"
-                            // itemProp={{
-                            //     style: { color: 'gold' },
-                            // }}
-                            >
-                                <ToggleButton style={{ color: "gold" }} value='active'>active</ToggleButton>
-                                <ToggleButton style={{ color: "gold" }} value='travel'>travel</ToggleButton>
-                                <ToggleButton style={{ color: "gold" }} value='attraction'>attraction</ToggleButton>
-                                <ToggleButton style={{ color: "gold" }} value='nightLife'>nightLife</ToggleButton>
-                                <ToggleButton style={{ color: "gold" }} value='educational'>educational</ToggleButton>
-                            </ToggleButtonGroup> :
-                            <TextField
-                                id="outlined-number"
-                                label={setLabel(selectedIndex)}
-                                type="number"
-                                className='search-field'
-                                InputLabelProps={{
-                                    style: { color: 'gold' },
-                                }}
-                                InputProps={{
-                                    style: { color: 'gold' },
-                                }}
-                                onChange={handleChange}
-                            />
-                    }
-                </div>
                 <ButtonGroup variant="contained" ref={anchorRef} aria-label="split button">
-                    <Button onClick={handleClick}>{`Search by ${options[selectedIndex]}`}</Button>
-                    <Button
-                        size="small"
-                        aria-controls={open ? 'split-button-menu' : undefined}
-                        aria-expanded={open ? 'true' : undefined}
-                        aria-label="select merge strategy"
-                        aria-haspopup="menu"
-                        onClick={handleToggle}
-                    >
-                        <ArrowDropDownIcon />
-                    </Button>
+                    <Button onClick={handleToggle}>{`Category`}</Button>
                 </ButtonGroup>
                 <Popper
                     sx={{
@@ -241,11 +83,10 @@ const ActivitiesList = ({ activities }) => {
                                     <MenuList id="split-button-menu" autoFocusItem>
                                         {options.map((option, index) => (
                                             <MenuItem
-                                                key={option}
-                                                selected={index === selectedIndex}
-                                                onClick={(event) => handleMenuItemClick(event, index)}
+                                                key={index}
+                                                onClick={(event) => getEntertainmentByGenre(index)}
                                             >
-                                                {`Search by ${option}`}
+                                                {option}
                                             </MenuItem>
                                         ))}
                                     </MenuList>
@@ -257,11 +98,20 @@ const ActivitiesList = ({ activities }) => {
             </div>
             <div className='containter'>
                 <div className='row justify-content-center'>
-                    {selectedItems !== undefined && selectedItems !== [] ?
+                    {selectedItems !== undefined && selectedItems.length > 0 ?
                         selectedItems.map((item) => {
                             return (
-                                <div className='col-sm-6 col-md-3'>
-                                    {item.name}
+                                <div className='col-sm-6 col-md-3' key={item}>
+                                    <div className='entertainment-det'>
+                                        <div className='entertainment-poster' style={{ maxWidth: "250px", maxHeight: "600px", width: "100%", height: "100%" }}>
+                                            <a href={item.trailerLink} target='_blank'>
+                                                <img src={item.poster} alt="film poster" style={{ maxWidth: "250px", maxHeight: "600px", width: "100%", height: "100%" }} />
+                                            </a>
+                                        </div>
+                                        <div className='entertainment-title'>
+                                            <h4>{item.title}</h4>
+                                        </div>
+                                    </div>
                                 </div>
                             )
                         }) :

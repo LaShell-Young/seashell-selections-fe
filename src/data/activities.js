@@ -1,98 +1,32 @@
 export const activities = [
   {
-    "name": "camping",
-    "type": "active",
-    "status": "pending",
-    "rating": 0
+    "title": "Puttery",
+    "type": "mini golf & bar",
+    "trailerLink": "https://www.puttery.com/locations/dallas",
+    "genres": ['active', 'nightlife'],
+    "poster": "https://www.themoviedb.org/t/p/original/5TblBHvORO9yplo0ZM7zi4KjL7c.jpg",
+    "backdrops": [],
+    "rating": 3,
+    "hasWatched": false
   },
   {
-    "name": "Last of us 2",
-    "type": "gaming",
-    "status": "in-progress",
-    "rating": 5
+    "title": "Camping",
+    "type": "spending time in nature",
+    "trailerLink": "https://tpwd.texas.gov/state-parks/dinosaur-valley",
+    "genres": ['active'],
+    "poster": "https://www.themoviedb.org/t/p/original/rSje3FS7ycJSglowlngjsvDt7vO.jpg",
+    "backdrops": [],
+    "rating": 3,
+    "hasWatched": false
   },
   {
-    "name": "Paddle boarding",
-    "type": "active",
-    "status": "done",
-    "rating": 4
-  },
-  {
-    "name": "Write a book",
-    "type": "educational",
-    "status": "in-progress",
-    "rating": 0
-  },
-  {
-    "name": "Ziplining",
-    "type": "active",
-    "status": "pending",
-    "rating": 0
-  },
-  {
-    "name": "Renaissance fair",
-    "type": "attraction",
-    "status": "pending",
-    "rating": 0
-  },
-  {
-    "name": "City fair",
-    "type": "attraction",
-    "status": "pending",
-    "rating": 0
-  },
-  {
-    "name": "Ferris wheel",
-    "type": "attraction",
-    "status": "pending",
-    "rating": 0
-  },
-  {
-    "name": "rock climbing",
-    "type": "active",
-    "status": "pending",
-    "rating": 0
-  },
-  {
-    "name": "Trip to Spain",
-    "type": "travel",
-    "status": "pending",
-    "rating": 0
-  },
-  {
-    "name": "Trip to Greece",
-    "type": "travel",
-    "status": "pending",
-    "rating": 0
-  },
-  {
-    "name": "Trip to Colorado",
-    "type": "travel",
-    "status": "pending",
-    "rating": 0
-  },
-  {
-    "name": "Karaoke bar",
-    "type": "nightlife",
-    "status": "pending",
-    "rating": 0
-  },
-  {
-    "name": "Roller skating",
-    "type": "active",
-    "status": "pending",
-    "rating": 0
-  },
-  {
-    "name": "Hiking",
-    "type": "active",
-    "status": "pending",
-    "rating": 0
-  },
-  {
-    "name": "Batting cage",
-    "type": "active",
-    "status": "pending",
-    "rating": 0
+    "title": "Dallas after dark zoo lights",
+    "type": "A limited time event at the Dallas Zoo",
+    "trailerLink": "https://www.dallaszoo.com/",
+    "genres": ['attraction'],
+    "poster": "https://www.themoviedb.org/t/p/original/sERAdCJCu0boxQFKpFC831zBErC.jpg",
+    "backdrops": [],
+    "rating": 3,
+    "hasWatched": false
   }
 ]

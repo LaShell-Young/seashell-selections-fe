@@ -289,7 +289,7 @@ export const entertainment = [
     "title": "Cable girls",
     "type": "series",
     "trailerLink": "https://www.youtube.com/watch?v=e_lBUTT4e7k",
-    "genres": ["period piece", "drama", "Spanish"],
+    "genres": ["period piece", "drama", "spanish"],
     "poster": "https://image.tmdb.org/t/p/original/lAwLmgq1zy0xJnusszmvWTLjFlO.jpg",
     "backdrops": [
       "https://image.tmdb.org/t/p/original/xCWBhiM4j3PzbinbhHb3ddeFfjb.jpg",
