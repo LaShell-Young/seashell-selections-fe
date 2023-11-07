@@ -7,7 +7,7 @@ const ActivitiesPage = ({ activities }) => {
     // console.log(activities)
     return (
         <div>
-            {activities !== undefined && activities !== [] ?
+            {activities !== undefined && activities.length > 0 ?
                 <ActivitiesList activities={activities} /> :
                 <h2>NO RESULTS FOUND!</h2>
             }
