@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import api from '../../api/axiosConfig'
+// import api from '../../api/axiosConfig'
 import './Entertainment.css'
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
@@ -13,10 +13,13 @@ import MenuList from '@mui/material/MenuList';
 import TextField from '@mui/material/TextField';
 
 const options = ['Title', 'Type', 'Genre', 'Rating'];
+// const genreOptions = ['Action', 'Comedy', 'Crime', 'Suspense', 'Sci-fi', 'History',
+//     'Romance', 'Gay', 'Thriller', 'Drama', 'Western', 'Adventure', 'Fantasy', 'Mystery',
+//     'Animation', 'Period piece', 'Spanish', 'Horror'];
 
 const EntertainmentList = ({ entertainment }) => {
-    // console.log("entertainment in EntertainmentList")
-    // console.log(entertainment)
+    console.log("entertainment in EntertainmentList")
+    console.log(entertainment)
     const [selectedItems, setSelectedItems] = useState();
     const [open, setOpen] = useState(false);
     const anchorRef = React.useRef(null);
@@ -25,17 +28,33 @@ const EntertainmentList = ({ entertainment }) => {
 
     const getEntertainmentByGenre = async () => {
         try {
-            const response = await api.get(`/api/entertainment/genre?genres=${searchInput}`);
-            setSelectedItems(response.data);
+            // const response = await api.get(`/api/entertainment/genre?genres=${searchInput}`);
+            // setSelectedItems(response.data);
+            const byGenre = entertainment.filter((item) => {
+                let genres = searchInput.split(", ");
+
+                for (let i = 0; i < genres.length; i++) {
+                    if (item.genres.includes(genres[i].toLowerCase())) {
+                        return true;
+                    }
+                }
+            })
+
+            setSelectedItems(byGenre);
         } catch (err) {
             console.log(err);
         }
     }
     const getEntertainmentByTitle = async () => {
         try {
-            const response = await api.get(`/api/entertainment/title/${searchInput}`);
+            // const response = await api.get(`/api/entertainment/title/${searchInput}`);
+            // setSelectedItems(response.data);
 
-            setSelectedItems(response.data);
+            const byTitle = entertainment.filter((item) => {
+                return item.title.includes(searchInput);
+            })
+
+            setSelectedItems(byTitle);
             // console.log(response.data);
         } catch (err) {
             console.log(err);
@@ -43,20 +62,29 @@ const EntertainmentList = ({ entertainment }) => {
     }
     const getEntertainmentByType = async () => {
         try {
-            const response = await api.get(`/api/entertainment/type/${searchInput}`);
-
-            setSelectedItems(response.data);
+            // const response = await api.get(`/api/entertainment/type/${searchInput}`);
+            // setSelectedItems(response.data);
             // console.log(response.data);
+
+            const byType = entertainment.filter((item) => {
+                return item.type == searchInput.toLowerCase();
+            })
+
+            setSelectedItems(byType);
         } catch (err) {
             console.log(err);
         }
     }
     const getEntertainmentByRating = async () => {
         try {
-            const response = await api.get(`/api/entertainment/rate/${searchInput}`);
-
-            setSelectedItems(response.data);
+            // const response = await api.get(`/api/entertainment/rate/${searchInput}`);
+            // setSelectedItems(response.data);
             // console.log(response.data);
+            const byRating = entertainment.filter((item) => {
+                return item.rating == searchInput;
+            })
+
+            setSelectedItems(byRating);
         } catch (err) {
             console.log(err);
         }
@@ -72,9 +100,7 @@ const EntertainmentList = ({ entertainment }) => {
                     getEntertainmentByTitle();
                     break;
                 case 1:
-                    if (searchInput == "movie" || searchInput == "show") {
-                        getEntertainmentByType();
-                    }
+                    getEntertainmentByType();
                     break;
                 case 2:
                     getEntertainmentByGenre();
@@ -129,8 +155,8 @@ const EntertainmentList = ({ entertainment }) => {
         setSelectedItems(entertainment);
     }, [])
 
-    // console.log("selectedItems")
-    // console.log(selectedItems)
+    console.log("selectedItems")
+    console.log(selectedItems)
     return (
         <>
             <div style={{ margin: "30px" }}>
