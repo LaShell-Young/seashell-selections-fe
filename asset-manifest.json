@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/seashell-selections-fe/static/css/main.755d790b.css",
-    "main.js": "/seashell-selections-fe/static/js/main.e4bb3037.js",
+    "main.js": "/seashell-selections-fe/static/js/main.d8720f26.js",
     "index.html": "/seashell-selections-fe/index.html",
     "main.755d790b.css.map": "/seashell-selections-fe/static/css/main.755d790b.css.map",
-    "main.e4bb3037.js.map": "/seashell-selections-fe/static/js/main.e4bb3037.js.map"
+    "main.d8720f26.js.map": "/seashell-selections-fe/static/js/main.d8720f26.js.map"
   },
   "entrypoints": [
     "static/css/main.755d790b.css",
-    "static/js/main.e4bb3037.js"
+    "static/js/main.d8720f26.js"
   ]
 }
