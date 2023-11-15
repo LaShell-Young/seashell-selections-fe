@@ -10,8 +10,9 @@ import Popper from '@mui/material/Popper';
 import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
 
-const options = ['All', 'Active', 'Attraction', 'Travel', 'Educational', 'Nightlife'];
-
+const options = ['All', 'Active', 'Romantic', 'Free', 'Inexpensive', 'Drinking Will Occur',
+    'Attraction', 'Travel', 'Educational', 'Nightlife', 'Hide From The World Together',
+    'Costly', 'Kiss Ya Money Goodbye'];
 
 const ActivitiesList = ({ activities }) => {
     const [selectedItems, setSelectedItems] = useState();
@@ -58,7 +59,7 @@ const ActivitiesList = ({ activities }) => {
         <>
             <div style={{ margin: "30px" }}>
                 <ButtonGroup variant="contained" ref={anchorRef} aria-label="split button">
-                    <Button onClick={handleToggle}>{`Category`}</Button>
+                    <Button onClick={handleToggle}>{`Filter`}</Button>
                 </ButtonGroup>
                 <Popper
                     sx={{

@@ -57,7 +57,7 @@ const EntertainmentList = ({ entertainment }) => {
         <>
             <div style={{ margin: "30px" }}>
                 <ButtonGroup variant="contained" ref={anchorRef} aria-label="split button">
-                    <Button onClick={handleToggle}>{`Category`}</Button>
+                    <Button onClick={handleToggle}>{`Filter`}</Button>
                 </ButtonGroup>
                 <Popper
                     sx={{
