@@ -30,6 +30,11 @@ const ItemCollection = ({ items, options, title, description, id, emptyMessage }
           <Typography component="h2" variant="h2" className="section-title">{title}</Typography>
           <Typography className="section-description">{description}</Typography>
         </Box>
+        <Box>
+          <Box className="collection-count">
+            Showing {visibleItems.length} {visibleItems.length === 1 ? 'selection' : 'selections'}
+          </Box>
+        </Box>
         <FormControl className="genre-select" size="small">
           <Select
             value={genre}
